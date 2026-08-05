@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#123c2d">
+  <meta name="description" content="Banguide och scorekort för Norra Vare Disc Golf.">
+  <title>Norra Vare Disc Golf</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">NORRA VARE</p>
+      <h1>Disc Golf</h1>
+    </div>
+    <button id="installButton" class="icon-button hidden" aria-label="Installera appen">＋</button>
+  </header>
+
+  <main id="app">
+    <section id="homeView" class="view active">
+      <article class="hero">
+        <div class="hero-overlay">
+          <p class="eyebrow">VÄLKOMMEN TILL</p>
+          <h2>Norra Vare Disc Golf</h2>
+          <p>En naturnära bana med korta, tekniska hål.</p>
+          <button class="primary" data-action="new-round">Spela runda</button>
+        </div>
+      </article>
+
+      <div class="course-stats">
+        <article><strong id="courseHoleCount">2</strong><span>klara hål</span></article>
+        <article><strong id="coursePar">4</strong><span>totalpar</span></article>
+        <article><strong id="courseLength">67 m</strong><span>totallängd</span></article>
+      </div>
+
+      <section class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SNABBVAL</p>
+            <h2>Utforska banan</h2>
+          </div>
+        </div>
+        <div class="quick-grid">
+          <button class="quick-card" data-nav="guide">
+            <span class="quick-icon">🗺️</span>
+            <strong>Banguide</strong>
+            <small>Kartor och hålinfo</small>
+          </button>
+          <button class="quick-card" data-nav="history">
+            <span class="quick-icon">🏆</span>
+            <strong>Historik</strong>
+            <small>Sparade rundor</small>
+          </button>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">BANSTATUS</p>
+            <h2>Aktuellt</h2>
+          </div>
+        </div>
+        <article class="notice">
+          <strong>Två hål är inlagda</strong>
+          <p>Banguiden byggs ut efter hand. Hål 1 och 2 är spelbara i scorekortet.</p>
+        </article>
+      </section>
+    </section>
+
+    <section id="guideView" class="view">
+      <div class="page-heading">
+        <p class="eyebrow">NORRA VARE</p>
+        <h2>Banguide</h2>
+        <p>Tryck på ett hål för karta, spelinfo och tips.</p>
+      </div>
+      <div id="holeList" class="hole-list"></div>
+    </section>
+
+    <section id="roundView" class="view">
+      <div id="roundSetup">
+        <div class="page-heading">
+          <p class="eyebrow">NY RUNDA</p>
+          <h2>Vilka spelar?</h2>
+          <p>Lägg till mellan en och sex spelare.</p>
+        </div>
+        <div id="playerInputs" class="player-inputs"></div>
+        <div class="setup-actions">
+          <button id="addPlayerButton" class="secondary">+ Lägg till spelare</button>
+          <button id="startRoundButton" class="primary">Starta rundan</button>
+        </div>
+      </div>
+
+      <div id="scorecard" class="hidden">
+        <div class="score-top">
+          <div>
+            <p class="eyebrow">PÅGÅENDE RUNDA</p>
+            <h2 id="scoreHoleTitle">Hål 1</h2>
+          </div>
+          <button id="cancelRoundButton" class="text-button">Avbryt</button>
+        </div>
+
+        <article class="current-hole">
+          <img id="scoreHoleImage" src="" alt="">
+          <div class="current-hole-info">
+            <div>
+              <span id="scoreHoleMeta" class="pill"></span>
+              <p id="scoreHoleDescription"></p>
+            </div>
+            <button id="openHoleInfoButton" class="secondary small">Visa hålinfo</button>
+          </div>
+        </article>
+
+        <div id="scorePlayers" class="score-players"></div>
+
+        <div class="round-navigation">
+          <button id="previousHoleButton" class="secondary">← Föregående</button>
+          <button id="nextHoleButton" class="primary">Nästa hål →</button>
+        </div>
+      </div>
+
+      <div id="roundResult" class="hidden"></div>
+    </section>
+
+    <section id="historyView" class="view">
+      <div class="page-heading">
+        <p class="eyebrow">RESULTAT</p>
+        <h2>Historik</h2>
+        <p>Dina rundor sparas lokalt i den här mobilen.</p>
+      </div>
+      <div id="historyList" class="history-list"></div>
+      <button id="clearHistoryButton" class="danger hidden">Radera all historik</button>
+    </section>
+
+    <section id="moreView" class="view">
+      <div class="page-heading">
+        <p class="eyebrow">BRA ATT VETA</p>
+        <h2>Regler och information</h2>
+      </div>
+      <article class="info-card">
+        <h3>Grundregler</h3>
+        <p>Kasta från tee. Nästa kast görs från platsen där discen stannade. Den spelare som ligger längst från korgen kastar först.</p>
+      </article>
+      <article class="info-card">
+        <h3>Säkerhet</h3>
+        <p>Kasta aldrig när människor eller djur befinner sig i kastlinjen. Visa hänsyn till mark, byggnader och annan verksamhet på gården.</p>
+      </article>
+      <article class="info-card">
+        <h3>Om banan</h3>
+        <p>Norra Vare Disc Golf är en privat, naturnära bana under utveckling.</p>
+      </article>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Huvudmeny">
+    <button class="nav-button active" data-nav="home"><span>⌂</span><small>Hem</small></button>
+    <button class="nav-button" data-nav="guide"><span>⌖</span><small>Banguide</small></button>
+    <button class="nav-button play-button" data-nav="round"><span>🥏</span><small>Spela</small></button>
+    <button class="nav-button" data-nav="history"><span>◷</span><small>Historik</small></button>
+    <button class="nav-button" data-nav="more"><span>•••</span><small>Mer</small></button>
+  </nav>
+
+  <dialog id="holeDialog">
+    <button id="closeHoleDialog" class="dialog-close" aria-label="Stäng">×</button>
+    <div id="holeDialogContent"></div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

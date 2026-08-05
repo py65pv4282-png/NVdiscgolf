@@ -1,20 +1,100 @@
-const holes = [
+  }const holes = [
+
   {
+
     number: 1,
+
     par: 2,
-    length: 40,
-    image: "assets/hal-1-karta.jpg",
-    description: "Korgen står rakt framför tee. Observera diket mellan utkastet och korgen.",
-    tip: "Välj ett kontrollerat rakt kast och håll discen borta från diket."
+
+    distance: 35,
+
+    description: "",
+
+    image: "images/hole1.jpg"
+
   },
+
   {
+
     number: 2,
+
     par: 2,
-    length: 27,
-    image: "assets/hal-2-karta.jpg",
-    description: "Kort, rakt hål över öppen gräsyta.",
-    tip: "Ett lugnt och rakt kast ger en bra chans på två kast."
-  }
+
+    distance: 27,
+
+    description: "",
+
+    image: "images/hole2.jpg"
+
+  },
+
+  {
+
+    number: 3,
+
+    par: 4,
+
+    distance: 126,
+
+    description: "",
+
+    image: "images/hole3.jpg"
+
+  },
+
+  {
+
+    number: 4,
+
+    par: 3,
+
+    distance: 52,
+
+    description: "",
+
+    image: "images/hole4.jpg"
+
+  },
+
+  {
+
+    number: 5,
+
+    par: 3,
+
+    distance: 78,
+
+    description: "",
+
+    image: "images/hole5.jpg"
+
+  },
+
+  {
+
+    number: 6,
+
+    par: 3,
+
+    distance: 90,
+
+    description: "",
+
+    image: "images/hole6.jpg"
+
+  },
+
+  {
+
+    number: 7,
+
+    par: 2,
+
+    distance: 38,
+
+    description: "",
+
+    image: "images/hole7.jpg"
 ];
 
 const state = {

@@ -1,4 +1,4 @@
-  }const holes = [
+const holes = [
 
   {
 

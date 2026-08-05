@@ -95,6 +95,9 @@
     description: "",
 
     image: "images/hole7.jpg"
+
+  }
+
 ];
 
 const state = {

@@ -1,105 +1,54 @@
 const holes = [
-
   {
-
     number: 1,
-
     par: 2,
-
-    distance: 35,
-
+    length: 35,
     description: "",
-
     image: "images/hole1.jpg"
-
   },
-
   {
-
     number: 2,
-
     par: 2,
-
-    distance: 27,
-
+    length: 27,
     description: "",
-
     image: "images/hole2.jpg"
-
   },
-
   {
-
     number: 3,
-
     par: 4,
-
-    distance: 126,
-
+    length: 126,
     description: "",
-
     image: "images/hole3.jpg"
-
   },
-
   {
-
     number: 4,
-
     par: 3,
-
-    distance: 52,
-
+    length: 52,
     description: "",
-
     image: "images/hole4.jpg"
-
   },
-
   {
-
     number: 5,
-
     par: 3,
-
-    distance: 78,
-
+    length: 78,
     description: "",
-
     image: "images/hole5.jpg"
-
   },
-
   {
-
     number: 6,
-
     par: 3,
-
-    distance: 90,
-
+    length: 90,
     description: "",
-
     image: "images/hole6.jpg"
-
   },
-
   {
-
     number: 7,
-
     par: 2,
-
-    distance: 38,
-
+    length: 38,
     description: "",
-
     image: "images/hole7.jpg"
-
   }
-
 ];
-
 const state = {
   view: "home",
   players: ["Spelare 1"],

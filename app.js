@@ -4,14 +4,14 @@ const holes = [
     par: 2,
     length: 35,
     description: "",
-    image: "images/hole1.jpg"
+    image: "hal-1-karta.jpg"
   },
   {
     number: 2,
     par: 2,
     length: 27,
     description: "",
-    image: "images/hole2.jpg"
+    image: "hal-2-karta.jpg"
   },
   {
     number: 3,

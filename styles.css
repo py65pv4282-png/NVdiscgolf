@@ -181,3 +181,10 @@ dialog::backdrop { background:rgba(4,16,11,.72); backdrop-filter:blur(4px); }
   .hero { border-radius: 0 0 28px 28px; }
   .hole-list { grid-template-columns: repeat(2,1fr); }
 }
+.home-logo {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  margin: 0 auto 18px;
+}

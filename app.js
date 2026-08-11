@@ -4,7 +4,7 @@ const holes = [
     par: 2,
     length: 35,
     description: "",
-    image: "Hål1.jpg"
+    image: "Hal1.jpg"
   },
   {
     number: 2,

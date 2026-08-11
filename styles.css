@@ -888,3 +888,13 @@ dialog::backdrop {
   }
 
 }
+.course-overview {
+  margin: 0 0 24px;
+}
+
+.course-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}

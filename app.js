@@ -11,42 +11,42 @@ const holes = [
     par: 2,
     length: 27,
     description: "",
-    image: "Hål2.jpg"
+    image: "Hal2.jpg"
   },
   {
     number: 3,
     par: 4,
     length: 126,
     description: "",
-    image: "Hål3.heic"
+    image: "Hal3.heic"
   },
   {
     number: 4,
     par: 3,
     length: 52,
     description: "",
-    image: "Hål4.jpg"
+    image: "Hal4.jpg"
   },
   {
     number: 5,
     par: 3,
     length: 78,
     description: "",
-    image: "Hål5.jpg"
+    image: "Hal5.jpg"
   },
   {
     number: 6,
     par: 3,
     length: 90,
     description: "",
-    image: "Hål6.jpg"
+    image: "Hal6.jpg"
   },
   {
     number: 7,
     par: 2,
     length: 38,
     description: "",
-    image: "Hål7.jpg"
+    image: "Hal7.jpg"
   }
 ];
 

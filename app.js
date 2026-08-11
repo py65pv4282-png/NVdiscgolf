@@ -4,49 +4,49 @@ const holes = [
     par: 2,
     length: 35,
     description: "",
-    image: "hal-1-karta.jpg"
+    image: "Hål1.jpg"
   },
   {
     number: 2,
     par: 2,
     length: 27,
     description: "",
-    image: "hal-2-karta.jpg"
+    image: "Hål2.jpg"
   },
   {
     number: 3,
     par: 4,
     length: 126,
     description: "",
-    image: "images/hole3.jpg"
+    image: "Hål3.heic"
   },
   {
     number: 4,
     par: 3,
     length: 52,
     description: "",
-    image: "images/hole4.jpg"
+    image: "Hål4.jpg"
   },
   {
     number: 5,
     par: 3,
     length: 78,
     description: "",
-    image: "images/hole5.jpg"
+    image: "Hål5.jpg"
   },
   {
     number: 6,
     par: 3,
     length: 90,
     description: "",
-    image: "images/hole6.jpg"
+    image: "Hål6.jpg"
   },
   {
     number: 7,
     par: 2,
     length: 38,
     description: "",
-    image: "images/hole7.jpg"
+    image: "Hål7.jpg"
   }
 ];
 

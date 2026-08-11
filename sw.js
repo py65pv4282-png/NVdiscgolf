@@ -1,4 +1,4 @@
-const CACHE = "nvdiscgolf-v3";
+const CACHE = "nvdiscgolf-v5";
 
 const FILES = [
   "./",
@@ -8,7 +8,6 @@ const FILES = [
   "./manifest.webmanifest",
   "./Hål1.jpg",
   "./Hål2.jpg",
-  "./Hål3.heic",
   "./Hål4.jpg",
   "./Hål5.jpg",
   "./Hål6.jpg",
@@ -18,7 +17,9 @@ const FILES = [
 ];
 
 self.addEventListener("install", event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)));
+  event.waitUntil(
+    caches.open(CACHE).then(cache => cache.addAll(FILES))
+  );
   self.skipWaiting();
 });
 
@@ -37,16 +38,14 @@ self.addEventListener("activate", event => {
 
 self.addEventListener("fetch", event => {
   event.respondWith(
-    caches.match(event.request).then(
-      cached =>
-        cached ||
-        fetch(event.request)
-          .then(response => {
-            const copy = response.clone();
-            caches.open(CACHE).then(cache => cache.put(event.request, copy));
-            return response;
-          })
-          .catch(() => caches.match("./index.html"))
+    caches.match(event.request).then(cached =>
+      cached || fetch(event.request).then(response => {
+        const copy = response.clone();
+        caches.open(CACHE).then(cache =>
+          cache.put(event.request, copy)
+        );
+        return response;
+      })
     )
   );
 });
